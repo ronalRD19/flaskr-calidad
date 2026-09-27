@@ -1,0 +1,4 @@
+flaskr\auth.py - A (62.92)
+flaskr\blog.py - A (65.22)
+flaskr\db.py - A (86.06)
+flaskr\__init__.py - A (94.22)

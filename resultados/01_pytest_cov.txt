@@ -1,0 +1,26 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\Ronald\Documents\flaskr-calidad
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collected 24 items
+
+tests\test_auth.py ........                                              [ 33%]
+tests\test_blog.py ............                                          [ 83%]
+tests\test_db.py ..                                                      [ 91%]
+tests\test_factory.py ..                                                 [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+flaskr\__init__.py      20      0      2      0   100%
+flaskr\auth.py          68      0     20      0   100%
+flaskr\blog.py          64      0     16      0   100%
+flaskr\db.py            26      0      4      0   100%
+----------------------------------------------------------------
+TOTAL                  178      0     42      0   100%
+Coverage XML written to file coverage.xml
+============================= 24 passed in 2.67s ==============================

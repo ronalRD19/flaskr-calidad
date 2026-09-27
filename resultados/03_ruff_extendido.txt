@@ -1,0 +1,12 @@
+S106 Possible hardcoded password assigned to argument: "SECRET_KEY"
+  --> flaskr\__init__.py:11:9
+   |
+ 9 |     app.config.from_mapping(
+10 |         # a default secret that should be overridden by instance config
+11 |         SECRET_KEY="dev",
+   |         ^^^^^^^^^^^^^^^^
+12 |         # store the database in the instance folder
+13 |         DATABASE=os.path.join(app.instance_path, "flaskr.sqlite"),
+   |
+
+Found 1 error.

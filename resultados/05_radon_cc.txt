@@ -1,0 +1,23 @@
+flaskr\auth.py
+    F 47:0 register - B (7)
+    F 85:0 login - A (5)
+    F 33:0 load_logged_in_user - A (2)
+    F 19:0 login_required - A (1)
+    F 113:0 logout - A (1)
+flaskr\blog.py
+    F 28:0 get_post - A (4)
+    F 62:0 create - A (4)
+    F 88:0 update - A (4)
+    F 17:0 index - A (1)
+    F 115:0 delete - A (1)
+flaskr\db.py
+    F 9:0 get_db - A (2)
+    F 23:0 close_db - A (2)
+    F 33:0 init_db - A (1)
+    F 42:0 init_db_command - A (1)
+    F 51:0 init_app - A (1)
+flaskr\__init__.py
+    F 6:0 create_app - A (2)
+
+16 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.4375)

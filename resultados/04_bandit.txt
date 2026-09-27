@@ -1,0 +1,41 @@
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.12.10
+Run started:2026-09-27 21:06:32.295701+00:00
+
+Test results:
+>> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'dev'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b106_hardcoded_password_funcarg.html
+   Location: flaskr\__init__.py:11:4
+10	        # a default secret that should be overridden by instance config
+11	        SECRET_KEY="dev",
+12	        # store the database in the instance folder
+13	        DATABASE=os.path.join(app.instance_path, "flaskr.sqlite"),
+14	    )
+15	
+16	    if test_config is None:
+17	        # load the instance config, if it exists, when not testing
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 251
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 1
+		High: 0
+Files skipped (0):
